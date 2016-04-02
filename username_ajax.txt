@@ -1,0 +1,22 @@
+username_submit_ajax
+// do no know if this below works
+
+<div class="col-sm-12 col-md-12" id="username">
+    <form id="user" onsubmit="submitForm()">
+      user name:<br>
+      <input type="text" name="username"><br>
+      <input type="button" value="OK">
+    </form>
+  </div>
+
+
+function submitForm() {
+    var http = new XMLHttpRequest();
+    http.open("POST", "", true);
+    http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    var params = "uname=" + document.getElementById("user").value;
+    http.send(params);
+    http.onload = function() {
+        alert(http.responseText);
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Play Rock Paper Scissors | Game</title>
+
+<script src="scripts/rock-paper-scissors.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MRRQ4L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MRRQ4L');</script>
+<!-- End Google Tag Manager -->
+
+<h1 id="rps">Rock Paper Scissors</h1>
+
+<div class="row" style="padding-left:15%; padding-right: 15%">
+
+  <div class="col-sm-12 col-md-12" id="username">
+    <form id="user" onsubmit="return false">
+      Enter a user name and press play:<br>
+      <input type="text" id="uname" name="username"><br>
+    </form>
+  </div>
+
+  <div class="col-sm-12 col-md-12" id="username">
+    <a href="#" onclick="setup()" id="start-button">
+      <span>play</span>
+    </a>
+  </div>
+
+
+  <div class="col-sm-12 col-md-12" id="scoretable">
+    <p>I played: <span id="axplayed"></span></p>
+
+    <p>your score: <span id="plscore"></span></p>
+
+    <p>my score: <span id="axscore"></span></p>
+  </div>
+
+</div>
+
+<div class="row" style="padding-left:15%; padding-right: 15%">
+  <div class="col-sm-12 col-md-4" id="interest">
+    <div class="choice" id="rock">
+  	<i class="fa fa-hand-rock-o icons"></i>
+  	<p></p>
+    </div>
+	</div>
+
+  <div class="col-sm-12 col-md-4" id="interest">
+    <div class="choice" id="paper">
+  	<i class="fa fa-hand-paper-o icons"></i>
+  	<p></p>
+    </div>
+ 	</div>
+
+  <div class="col-sm-12 col-md-4" id="interest">
+    <div class="choice" id="scissors">
+  	<i class="fa fa-hand-scissors-o icons"></i>
+  	<p></p>
+    </div>  
+ 	</div>
+</div>
+
+</body>
+</html>
